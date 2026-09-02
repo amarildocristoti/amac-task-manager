@@ -1,0 +1,15 @@
+# Este .htaccess fica na RAIZ do projeto (fora da pasta public/).
+# Ele existe para o caso de alguem acessar o projeto SEM digitar
+# "/public" na URL (ex: http://localhost/meu-app/ em vez de
+# http://localhost/meu-app/public/) -- ele redireciona por baixo
+# dos panos para dentro da pasta public/, onde o index.php de
+# verdade esta.
+#
+# Requisito: o modulo mod_rewrite do Apache precisa estar ativado
+# (no WAMP: icone do WAMP -> Apache -> Apache modules -> rewrite_module).
+
+RewriteEngine On
+RewriteRule ^$ public/index.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php [L]
