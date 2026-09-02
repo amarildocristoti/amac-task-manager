@@ -37,7 +37,7 @@ define('DB_PASS', $_ENV['DB_PASS'] ?? '');
 // APP_URL e usada em TODA a aplicacao para montar links absolutos,
 // por exemplo: header('Location: ' . APP_URL . '/login')
 define('APP_ENV', $_ENV['APP_ENV'] ?? 'development');
-define('APP_URL', $_ENV['APP_URL'] ?? 'http://localhost/lista-tarefas/public');
+define('APP_URL', $_ENV['APP_URL'] ?? 'http://localhost/task-manager/public');
 define('APP_KEY', $_ENV['APP_KEY'] ?? '');
 
 // Em desenvolvimento, mostra os erros na tela (ajuda a debugar).
