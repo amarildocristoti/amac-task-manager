@@ -1,4 +1,4 @@
-# Exemplo: Lista de Tarefas
+# Lista Básica de Tarefas
 
 Aplicação completa e funcional construída em cima do mini-framework,
 demonstrando o padrão Model → Controller → View com uma única entidade
